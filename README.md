@@ -21,7 +21,7 @@ To finish the streaming, run the last cell of the jupyter notebook. You can then
 
 ## How it works
 
-These are some examples of the graphics shown for the word 'art', in which you can see the most popular hastags that follow that word in real time: <p align="center"> <img src="/img/img1.PNG"/>
+This is an example of the graphics shown for when scanning tweets which contain the word 'art'. You can see the most popular hastags that follow that word in real time: <p align="center"> <img src="/img/img1.PNG"/>
 
 ## Acknowledgements
 
