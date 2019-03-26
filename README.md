@@ -1,32 +1,28 @@
-# Graphing in real time the most popular Twitter hashtags with SparkStreaming 
+# Plotting in real time the most popular Twitter hashtags with SparkStreaming.
 
 Simple application that plots out the popularity of tags associated with incoming tweets streamed live from twitter.
 
-In order to simplify the task, [Cloud9](https://c9.io) has been used, in which I have worked with **node.js** and **express** framework to build the server.
-
 ## Quick Start
 
-As I didn't upload the *node_modules* folder, which must contain dependencies, If you want to install them just run the following command:
+First of all, you need to setup a Developer API acocunt with Twitter and create an application to get credentials. Just visit [Twitter Developer Platform](https://apps.twitter.com/).
+
+Once you have that, you also need to install **tweepy**, a python library to connect your Python to the twitter dev account. Also, **matplotlib** and **pandas** will be needed.
+
+Then, run only the first 8 cells of the jupyter notebook *TwitterSparkStreaming.ipynb*.
+
+Now, run the *twitterScanner.py* file. Make sure to add your own IP Adress and your credential keys (note that I have cleared mine from *twitterScanner.py*). Use the following command:
 
 ```bash
-$ npm install
+$ python3 twitterScanner.py
 ```
-  Note that ***package.json*** is supposed to update automatically (please, check it out anyway).
-  
-Also, a **join_us** database must be created. You can do it through MySQL CLI using:
+Now, run the next 3 cells of the jupyter notebook sequentially.
 
-```bash
-$ mysql-ctl cli
-```
+To finish the streaming, run the last cell of the jupyter notebook. You can then see how the display of tweets containing the specified word or string per console also terminates.
 
 ## How it works
 
-This is what we visualize when we enter the URL: <p align="center"> <img src="/imgs/screenshot1.PNG"/>
-  
-Then, we can proceed to enter an email address: <p align="center"> <img src="/imgs/screenshot2.PNG"/>
-  
-And, once we press *Join Now*, the count of members who have joined the cult increases unitarily in an interactive way: <p align="center"> <img src="/imgs/screenshot3.PNG"/>
+These are some examples of the graphics shown for the word 'art', in which you can see the most popular hastags that follow that word in real time: <p align="center"> <img src="/img/img1.PNG"/>
 
 ## Acknowledgements
 
-Thanks to [Colt Steele](https://github.com/Colt), as this project has been developed in the framework of *The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert* course.
+Thanks to [Jose Portilla](https://www.linkedin.com/in/jmportilla/), as this project has been developed in the framework of *Spark and Python for Big Data with PySpark* course.
