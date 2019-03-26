@@ -1,6 +1,6 @@
 # Plotting in real time the most popular Twitter hashtags with SparkStreaming.
 
-Simple application that plots out the popularity of tags associated with incoming tweets streamed live from twitter.
+Simple application that plots out the popularity of tags associated with incoming tweets streamed live from Twitter.
 
 ## Quick Start
 
